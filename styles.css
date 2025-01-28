@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  button {
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff4a3d;
+  }
+  
+  /* Weather Card Styles */
+  .weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #weatherIcon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  #temperature {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  #condition {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  #locationName {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
